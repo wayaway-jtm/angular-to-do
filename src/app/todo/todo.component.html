@@ -1,1 +1,7 @@
-<p>todo works!</p>
+<ul>
+  <li *ngFor="let t of tasks">
+    <button [hidden]='complete' class="btnComplete">Complete</button>
+    {{t.task}}
+    <button class="btnX">X</button>
+  </li>
+</ul>
