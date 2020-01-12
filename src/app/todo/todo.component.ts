@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ITodo, ToDoTask} from './todo'
+import { ITodo, ToDoTask } from './todo'
+import { compileNgModule } from '@angular/compiler';
 
 @Component({
   selector: 'app-todo',
@@ -18,10 +19,9 @@ export class TodoComponent implements OnInit {
   new ToDoTask('Sort out insurance stuff')];;
 
   constructor() {
-    
+
   }
 
   ngOnInit() {
   }
-
 }

@@ -1,0 +1,39 @@
+button {
+  margin: 5px;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+li span {
+    flex-grow: 2;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.btnComplete {
+  background-color: transparent;
+  border: 2px solid green;
+  color: green;
+  font-weight: bolder;
+}
+
+.btnComplete:hover {
+    background-color: green;
+    border: 2px solid transparent;
+    color: white;
+}
+
+.btnX {
+  background-color: transparent;
+  border: none;
+}
+
+.completed-task {
+  text-decoration-line: line-through;
+}

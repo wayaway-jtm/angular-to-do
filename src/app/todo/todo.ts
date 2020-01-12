@@ -11,4 +11,9 @@ export class ToDoTask implements ITodo {
         this.task = taskName;
         this.completed = isComplete;
     }
+
+
+    completeTask() {
+        this.completed = true;
+    }
 }
