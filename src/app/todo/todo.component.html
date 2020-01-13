@@ -1,6 +1,6 @@
 <ul>
   <li *ngFor="let t of tasks">
-    <button [hidden]='t.completed' (click)="t.completeTask()" class="btnComplete">Complete</button>
+    <button *ngIf="!t.completed" (click)="completeTask(t)" class="btnComplete">Complete</button>
     <span [ngClass]="{'completed-task' : t.completed}">{{t.task}}</span>
     <button class="btnX">X</button>
   </li>
