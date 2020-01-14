@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ITodo } from './todo/iToDo';
+import { compileNgModule } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,8 @@ import { ITodo } from './todo/iToDo';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  filterText: string = '';
+
   todos: ITodo[] = [{ task: 'Get groceries', completed: false },
   { task: 'Change litterboxes', completed: true },
   { task: 'Feed rabbit', completed: true },

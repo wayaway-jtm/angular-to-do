@@ -4,9 +4,9 @@
     <p>A place to store your to-do's</p>
   </section>
   <div id="tasks">
-    <input type="text" placeholder="Filter your to-do's" />
+    <input type="text" placeholder="Filter your to-do's" [(ngModel)]="filterText" />
     <ol>
-      <li *ngFor="let task of todos; index as i">
+      <li *ngFor="let task of (todos | todoSearch: filterText)">
         <app-todo [task]="task.task" [completed]="task.completed"></app-todo>
       </li>
     </ol>
