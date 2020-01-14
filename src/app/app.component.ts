@@ -21,7 +21,10 @@ export class AppComponent {
   title = 'angular-to-do';
 
   addNewTodo(todoName: string) {
-    this.todos = [...this.todos, { task: todoName, completed: false }];
+    // filtering
+    if (todoName !== "") {
+      this.todos = [...this.todos, { task: todoName, completed: false }];
+    }
   }
 
   removeTodo(taskToRemove: ITodo) {

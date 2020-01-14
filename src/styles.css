@@ -10,3 +10,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
+button {
+  user-select: none;
+}

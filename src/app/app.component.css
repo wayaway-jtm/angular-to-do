@@ -32,6 +32,25 @@ li {
   align-items: center;
 }
 
+#task-num {
+  margin-right: 5px;
+}
+
+/* 
+Another method to display task
+numbers while maintaining li flex display
+
+ol {
+  counter-reset: todo-counter;
+}
+
+li:before {
+  content: counter(todo-counter) ".";
+  counter-increment: todo-counter;
+  margin-right: 5px;
+} 
+*/
+
 #app-wrapper {
   box-shadow: 1px 1px 10px 0px black;
 }
@@ -53,6 +72,7 @@ li {
   display: inline;
   font-size: 1.01em;
   border-radius: 5px;
+  margin: 4px 0;
 }
 
 .btnX:hover {

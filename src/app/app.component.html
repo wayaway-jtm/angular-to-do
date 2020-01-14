@@ -7,11 +7,12 @@
     <input type="text" placeholder="Filter your to-do's" [(ngModel)]="filterText" />
     <ol>
       <li *ngFor="let task of (todos | todoSearch: filterText)">
+        <span id="task-num">{{todos.indexOf(task)+1}}. </span>
         <app-todo [task]="task.task" [completed]="task.completed"></app-todo>
-        <button class="btnX"(click)="removeTodo(task)" >X</button>
+        <button class="btnX"(click)="removeTodo(task)">X</button>
       </li>
     </ol>
-    <input type="text" placeholder="Add a new to-do" #newTodoName />
+    <input type="text" placeholder="Add a new to-do" (keyup.enter)="addNewTodo(newTodoName.value)" #newTodoName />
   </div>
   <button id="btnAdd" (click)="addNewTodo(newTodoName.value)">Add</button>
 </div>
