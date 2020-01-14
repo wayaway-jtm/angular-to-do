@@ -12,10 +12,7 @@ export class TodoComponent implements OnInit, ITodo {
   @Input() task: string;
   @Input() completed: boolean;
 
-  constructor() {
-    // this.task = taskName;
-    // this.completed = isComplete;
-  }
+  constructor() { }
 
   ngOnInit() {
   }
