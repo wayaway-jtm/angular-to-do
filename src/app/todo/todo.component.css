@@ -1,11 +1,20 @@
 button {
   margin: 5px;
+  margin-left: 0px;
+  border-radius: 5px;
+  font-size: 1.01em;
 }
 
 li {
   list-style-type: none;
   display: flex;
   align-items: center;
+}
+
+
+li span.task-num {
+  flex-grow: 0;
+  margin-right: 5px;
 }
 
 li span {
@@ -32,6 +41,11 @@ ul {
 .btnX {
   background-color: transparent;
   border: none;
+}
+
+.btnX:hover {
+  background-color: red;
+  color: white;
 }
 
 .completed-task {
