@@ -8,7 +8,7 @@ import { ITodo } from './todo/iToDo';
 })
 export class AppComponent {
   filterText: string = '';
-  newTodoName: string;
+  newTodoName: string = '';
 
   todos: ITodo[] = [{ task: 'Get groceries', completed: false },
   { task: 'Change litterboxes', completed: true },
