@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ITodo } from './todo/iToDo';
-import { compileNgModule } from '@angular/compiler';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +8,7 @@ import { compileNgModule } from '@angular/compiler';
 })
 export class AppComponent {
   filterText: string = '';
+  newTodoName: string;
 
   todos: ITodo[] = [{ task: 'Get groceries', completed: false },
   { task: 'Change litterboxes', completed: true },
@@ -20,11 +20,13 @@ export class AppComponent {
   { task: 'Sort out insurance stuff', completed: false }];
   title = 'angular-to-do';
 
-  addNewTodo(todoName: string) {
+  addNewTodo() {
     // filtering
-    if (todoName !== "") {
-      this.todos = [...this.todos, { task: todoName, completed: false }];
+    if (this.newTodoName !== "") {
+      this.todos = [...this.todos, { task: this.newTodoName, completed: false }];
     }
+    // clear input
+    this.newTodoName = '';
   }
 
   removeTodo(taskToRemove: ITodo) {
