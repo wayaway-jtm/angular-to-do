@@ -1,5 +1,4 @@
 <span>
   <button *ngIf="!completed" (click)="completeTask()" class="btnComplete">Complete</button>
   <span [ngClass]="{'completed-task' : completed }">{{task}}</span>
-  <button class="btnX">X</button>
 </span>

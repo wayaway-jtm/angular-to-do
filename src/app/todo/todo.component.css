@@ -26,16 +26,6 @@ span span {
     color: white;
 }
 
-.btnX {
-  background-color: transparent;
-  border: none;
-}
-
-.btnX:hover {
-  background-color: red;
-  color: white;
-}
-
 .completed-task {
   text-decoration-line: line-through;
 }

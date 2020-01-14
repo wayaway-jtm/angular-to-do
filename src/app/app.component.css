@@ -24,7 +24,7 @@ input {
 }
 
 app-todo {
-    display: inline;
+  display: inline;
 }
 
 li {
@@ -45,4 +45,14 @@ li {
   border: none;
   border-radius: 5px;
   font-size: 1.25em;
+}
+
+.btnX {
+  background-color: transparent;
+  border: none;
+}
+
+.btnX:hover {
+  background-color: red;
+  color: white;
 }
