@@ -4,15 +4,6 @@ button {
   font-size: 1.01em;
 }
 
-span {
-  display: flex;
-  align-items: center;
-}
-
-span span {
-  flex-grow: 2;
-}
-
 .btnComplete {
   background-color: transparent;
   border: 2px solid green;

@@ -21,6 +21,10 @@ export class AppComponent {
   title = 'angular-to-do';
 
   addNewTodo(todoName: string) {
-    this.todos.push({ task: todoName, completed: false });
+    this.todos = [...this.todos, { task: todoName, completed: false }];
+  }
+
+  removeTodo(taskToRemove: ITodo) {
+    this.todos = this.todos.filter(t => t !== taskToRemove);
   }
 }

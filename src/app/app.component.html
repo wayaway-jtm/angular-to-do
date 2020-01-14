@@ -8,7 +8,7 @@
     <ol>
       <li *ngFor="let task of (todos | todoSearch: filterText)">
         <app-todo [task]="task.task" [completed]="task.completed"></app-todo>
-        <button class="btnX">X</button>
+        <button class="btnX"(click)="removeTodo(task)" >X</button>
       </li>
     </ol>
     <input type="text" placeholder="Add a new to-do" #newTodoName />
