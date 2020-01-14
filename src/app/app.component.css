@@ -47,6 +47,11 @@ app-todo {
   font-size: 1.25em;
 }
 
+#btnAdd:active {
+  background-color: forestgreen;
+  box-shadow: inset 0px 0px 5px black;
+}
+
 .btnX {
   align-self: flex-end;
   background-color: transparent;
