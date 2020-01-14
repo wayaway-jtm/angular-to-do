@@ -1,8 +1,5 @@
-<ul>
-  <li *ngFor="let t of tasks; index as i">
-    <span class="task-num">{{i+1}}. </span>
-    <button *ngIf="!t.completed" (click)="completeTask(t)" class="btnComplete">Complete</button>
-    <span [ngClass]="{'completed-task' : t.completed}">{{t.task}}</span>
-    <button class="btnX">X</button>
-  </li>
-</ul>
+<span>
+  <button *ngIf="!completed" (click)="completeTask()" class="btnComplete">Complete</button>
+  <span [ngClass]="{'completed-task' : completed }">{{task}}</span>
+  <button class="btnX">X</button>
+</span>

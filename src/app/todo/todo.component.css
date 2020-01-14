@@ -1,28 +1,16 @@
 button {
-  margin: 5px;
-  margin-left: 0px;
+  margin: 2px 5px 2px 0;
   border-radius: 5px;
   font-size: 1.01em;
 }
 
-li {
-  list-style-type: none;
+span {
   display: flex;
   align-items: center;
 }
 
-
-li span.task-num {
-  flex-grow: 0;
-  margin-right: 5px;
-}
-
-li span {
-    flex-grow: 2;
-}
-
-ul {
-    padding-left: 0;
+span span {
+  flex-grow: 2;
 }
 
 .btnComplete {

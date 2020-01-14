@@ -5,8 +5,12 @@
   </section>
   <div id="tasks">
     <input type="text" placeholder="Filter your to-do's" />
-    <app-todo></app-todo>
-    <input type="text" placeholder="Add a new to-do" />
+    <ol>
+      <li *ngFor="let task of todos; index as i">
+        <app-todo [task]="task.task" [completed]="task.completed"></app-todo>
+      </li>
+    </ol>
+    <input type="text" placeholder="Add a new to-do" #newTodoName />
   </div>
-  <button id="btnAdd">Add</button>
+  <button id="btnAdd" (click)="addNewTodo(newTodoName.value)">Add</button>
 </div>

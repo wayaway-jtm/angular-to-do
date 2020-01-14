@@ -1,39 +1,48 @@
 #app-wrapper {
-    width: 70vw;
-    background-color: gainsboro;
-    border-radius: 15px;
-    padding: 15px;
+  width: 70vw;
+  background-color: gainsboro;
+  border-radius: 15px;
+  padding: 15px;
 }
 
 h1 {
-    margin: 0;
-    font-size: 1.75em;
+  margin: 0;
+  font-size: 1.75em;
 }
 
 p {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 input {
-    width: 100%;
-    padding: 5px;
-    border: 1px solid grey;
-    border-radius: 5px;
-    font-size: 1.1em;
-    font-weight: bold;
+  width: 100%;
+  padding: 5px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+app-todo {
+    display: inline;
+}
+
+li {
+  /* list-style-type: none; */
+  align-items: center;
 }
 
 #app-wrapper {
-    box-shadow: 1px 1px 10px 0px black;
+  box-shadow: 1px 1px 10px 0px black;
 }
 
 #btnAdd {
-    margin-top: 15px;
-    width: 100%;
-    padding: 5px;
-    background-color: seagreen;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.25em;
+  margin-top: 15px;
+  width: 100%;
+  padding: 5px;
+  background-color: seagreen;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.25em;
 }

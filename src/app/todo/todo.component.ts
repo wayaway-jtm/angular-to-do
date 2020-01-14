@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ITodo } from './iTodo'
 import { compileNgModule } from '@angular/compiler';
 
@@ -7,25 +7,20 @@ import { compileNgModule } from '@angular/compiler';
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
-export class TodoComponent implements OnInit {
+export class TodoComponent implements OnInit, ITodo {
 
-  tasks: ITodo[] = [{ task: 'Get groceries', completed: false },
-  { task: 'Change litterboxes', completed: true },
-  { task: 'Feed rabbit', completed: true },
-  { task: 'Clean bathroom', completed: false },
-  { task: 'Do laundry', completed: true },
-  { task: 'Fold clothes', completed: false },
-  { task: 'Work on homework', completed: true },
-  { task: 'Sort out insurance stuff', completed: false }];;
+  @Input() task: string;
+  @Input() completed: boolean;
 
   constructor() {
-
+    // this.task = taskName;
+    // this.completed = isComplete;
   }
 
   ngOnInit() {
   }
 
-  completeTask(task: ITodo) {
-    task.completed = true;
+  completeTask() {
+    this.completed = true;
   }
 }
