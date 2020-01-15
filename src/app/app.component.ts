@@ -17,7 +17,7 @@ export class AppComponent {
   { task: 'Do laundry', completed: true },
   { task: 'Fold clothes', completed: false },
   { task: 'Work on homework', completed: true },
-  { task: 'Sort out insurance stuff', completed: false }];
+  { task: 'Return empty cans & bottles', completed: false }];
   title = 'angular-to-do';
 
   addNewTodo() {
